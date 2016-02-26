@@ -21,4 +21,8 @@
  *  检查是否有使用麦克风的权限
  */
 + (BOOL)checkRecordAuthority;
+/**
+ *  是否第一次启动APP
+ */
++ (BOOL)isFirstOpenApp;
 @end

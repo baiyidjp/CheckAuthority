@@ -45,4 +45,13 @@
     }
     return bCanRecord;
 }
+
++ (BOOL)isFirstOpenApp{
+    if(![[NSUserDefaults standardUserDefaults] boolForKey:@"firstStart"]){
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"firstStart"];
+        return YES;
+    }else{
+        return NO;
+    }
+}
 @end
